@@ -57,8 +57,9 @@ it should be exactly the same link. The Callback URL makes sure you can
 link your R studio to your App. Then you can successfully create a
 Twitter API App. Once you created, you can get the keys and tokens for
 this App. They are important and private, make sure to copy them and do
-not tell others. If you lose them, you can also find them afterwards in
-the developer portal and you can also regenerate the keys. The keys and
+not share them to the public. If you lose them or have to share
+them(like what I did in this guide), you can find them afterwards in the
+developer portal or you can also regenerate the tokens. The keys and
 tokens we need for the setup in R are the consumer(API) key,
 consumer(API) secret, access token and access secret.
 
@@ -217,8 +218,8 @@ spotify30 <- search_30day("spotify", n = 300, env_name = "5293Data",
     ## tweets/search/30day/5293Data ***
 
     ## Warning: list(message = "Forbidden: Authentication succeeded but account is
-    ## not authorized to access this resource.", sent = "2022-03-31T18:05:12+00:00",
-    ## transactionId = "7220797d87dc0ceb")
+    ## not authorized to access this resource.", sent = "2022-03-31T18:20:47+00:00",
+    ## transactionId = "e04f985521bec3b3")
 
 ### Get favorited tweets
 
@@ -264,12 +265,12 @@ head(spotify_flw)
     ## # A tibble: 6 × 1
     ##   user_id            
     ##   <chr>              
-    ## 1 138156011          
-    ## 2 1509586366212067331
-    ## 3 1443488840027672577
-    ## 4 568676186          
-    ## 5 1441436452529659905
-    ## 6 1444176668072022019
+    ## 1 1486407081309904896
+    ## 2 138156011          
+    ## 3 1509586366212067331
+    ## 4 1443488840027672577
+    ## 5 568676186          
+    ## 6 1441436452529659905
 
 ### Get information of a certain user
 
@@ -295,12 +296,12 @@ user_df
     ## UofR              Official Twitter account for the University of Rochester, offering updates, news, support. Meliora: Ever Better.
     ## POTUS    46th President of the United States, husband to @FLOTUS, proud dad & pop. Tweets may be archived: https://t.co/HDhBZBlifs
     ##          statusesCount followersCount favoritesCount friendsCount
-    ## Columbia         32395         441342           7773          654
-    ## Netflix          43357       17233226          14849         2072
-    ## Spotify          37369        5214721          14572        17747
-    ## Yale             27351         618497            198          280
-    ## UofR             21851          50229           7904         4432
-    ## POTUS             2842       20718738              0           12
+    ## Columbia         32395         441340           7773          654
+    ## Netflix          43357       17233514          14849         2072
+    ## Spotify          37369        5214705          14572        17747
+    ## Yale             27351         618496            198          280
+    ## UofR             21851          50230           7904         4432
+    ## POTUS             2843       20718850              0           12
     ##                              url                    name             created
     ## Columbia https://t.co/s5tI6AG5PT     Columbia University 2011-02-07 18:58:59
     ## Netflix  https://t.co/ebeSKSnspf                 Netflix 2008-10-03 04:16:17
@@ -317,7 +318,7 @@ user_df
     ## POTUS        FALSE     TRUE      POTUS                      NA
     ##                           id listedCount followRequestSent
     ## Columbia           248795646        2737             FALSE
-    ## Netflix             16573941       19477             FALSE
+    ## Netflix             16573941       19479             FALSE
     ## Spotify             17230018       17036             FALSE
     ## Yale                 5695032        4485             FALSE
     ## UofR                14778782         569             FALSE
