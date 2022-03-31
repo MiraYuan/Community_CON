@@ -255,8 +255,8 @@ spotify30 <- search_30day("spotify", n = 300, env_name = "5293Data",
     ## tweets/search/30day/5293Data ***
 
     ## Warning: list(message = "Forbidden: Authentication succeeded but account is
-    ## not authorized to access this resource.", sent = "2022-03-31T17:44:06+00:00",
-    ## transactionId = "e78eb11a13f2790f")
+    ## not authorized to access this resource.", sent = "2022-03-31T17:47:20+00:00",
+    ## transactionId = "6086174442fdb5e6")
 
 ### Get favorited tweets
 
@@ -302,12 +302,12 @@ head(spotify_flw)
     ## # A tibble: 6 × 1
     ##   user_id            
     ##   <chr>              
-    ## 1 1444176668072022019
-    ## 2 414154665          
-    ## 3 1442163198296166403
-    ## 4 1140297054654218241
-    ## 5 1509571481516212226
-    ## 6 1476032481380147201
+    ## 1 568676186          
+    ## 2 1441436452529659905
+    ## 3 1444176668072022019
+    ## 4 414154665          
+    ## 5 1442163198296166403
+    ## 6 1140297054654218241
 
 ### Get information of a certain user
 
@@ -333,12 +333,12 @@ user_df
     ## UofR              Official Twitter account for the University of Rochester, offering updates, news, support. Meliora: Ever Better.
     ## POTUS    46th President of the United States, husband to @FLOTUS, proud dad & pop. Tweets may be archived: https://t.co/HDhBZBlifs
     ##          statusesCount followersCount favoritesCount friendsCount
-    ## Columbia         32392         441337           7773          654
-    ## Netflix          43357       17232818          14849         2072
-    ## Spotify          37369        5214604          14572        17747
-    ## Yale             27351         618492            198          280
+    ## Columbia         32392         441339           7773          654
+    ## Netflix          43357       17232880          14849         2072
+    ## Spotify          37369        5214618          14572        17747
+    ## Yale             27351         618494            198          280
     ## UofR             21851          50228           7903         4432
-    ## POTUS             2840       20717915              0           12
+    ## POTUS             2840       20718034              0           12
     ##                              url                    name             created
     ## Columbia https://t.co/s5tI6AG5PT     Columbia University 2011-02-07 18:58:59
     ## Netflix  https://t.co/ebeSKSnspf                 Netflix 2008-10-03 04:16:17
