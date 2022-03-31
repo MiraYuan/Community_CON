@@ -3,6 +3,8 @@
 
 Jiayi Yuan
 
+## Setup
+
 These are the libraries needed for this chapter.
 
 ``` r
@@ -29,41 +31,6 @@ library(rtweet)
     ## The following object is masked from 'package:twitteR':
     ## 
     ##     lookup_statuses
-
-## Background
-
-API, known as application programming interface, is always a strong tool
-for data scientists or statisticians to gain useful data or information
-from different websites, computer programs, etc. I tried to collect data
-using Twitter API for my final project, and I noticed that even though
-the tool is helpful, not so many of my classmates are familiar with it
-or used it before, and many of the guides online are outdated.
-Therefore, in this community contribution, I would like to provide a
-comprehensive guide on using Twitter API to search tweets or gather some
-other information, such as followers or favorited tweets, in R. Using
-the Twitter API should be an easy thing, but there could still be many
-problems for those who are totally new to such a tool. Therefore, I
-would like to introduce different setup methods to make sure that
-everyone who reads this guide can successfully link the interface to R.
-I will also include some examples of R codes and the output data in this
-guide to show more directly how the interface works.
-
-As a beginner, it took me a long time to set up the interface. I got
-many problems and tried to search the solutions online, but I found that
-not many people had those problems. Even though, for now, I still have
-many errors that are hard to find an answer online. Therefore, I believe
-an up-to-date guide on using Twitter API is necessary, and I would also
-like to introduce such a tool to more people who would like to gather
-data from webs and would not be freaked out by potential problems at the
-very beginning stage.
-
-Although I have not tried other APIs, I think the underlying logic is
-the same. By learning Twitter API, I believe I can also take advantage
-of getting familiar with other user APIs quickly. Therefore, learning
-how to use an API can be really helpful to me in my future study and I
-will also try more APIs or developer tools provided by other platforms
-
-## Setup
 
 ### Setup Twitter Developer Account and APP
 
@@ -129,11 +96,6 @@ setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
 ```
 
     ## [1] "Using direct authentication"
-
-``` r
-#I regenerated my tokens after sharing this guide. In order to make the codes work, I just link 
-#the output data generated with my old tokens.
-```
 
 **Method 2: rtweet Package**
 
@@ -255,8 +217,8 @@ spotify30 <- search_30day("spotify", n = 300, env_name = "5293Data",
     ## tweets/search/30day/5293Data ***
 
     ## Warning: list(message = "Forbidden: Authentication succeeded but account is
-    ## not authorized to access this resource.", sent = "2022-03-31T17:47:20+00:00",
-    ## transactionId = "6086174442fdb5e6")
+    ## not authorized to access this resource.", sent = "2022-03-31T18:05:12+00:00",
+    ## transactionId = "7220797d87dc0ceb")
 
 ### Get favorited tweets
 
@@ -302,12 +264,12 @@ head(spotify_flw)
     ## # A tibble: 6 × 1
     ##   user_id            
     ##   <chr>              
-    ## 1 568676186          
-    ## 2 1441436452529659905
-    ## 3 1444176668072022019
-    ## 4 414154665          
-    ## 5 1442163198296166403
-    ## 6 1140297054654218241
+    ## 1 138156011          
+    ## 2 1509586366212067331
+    ## 3 1443488840027672577
+    ## 4 568676186          
+    ## 5 1441436452529659905
+    ## 6 1444176668072022019
 
 ### Get information of a certain user
 
@@ -333,12 +295,12 @@ user_df
     ## UofR              Official Twitter account for the University of Rochester, offering updates, news, support. Meliora: Ever Better.
     ## POTUS    46th President of the United States, husband to @FLOTUS, proud dad & pop. Tweets may be archived: https://t.co/HDhBZBlifs
     ##          statusesCount followersCount favoritesCount friendsCount
-    ## Columbia         32392         441339           7773          654
-    ## Netflix          43357       17232880          14849         2072
-    ## Spotify          37369        5214618          14572        17747
-    ## Yale             27351         618494            198          280
-    ## UofR             21851          50228           7903         4432
-    ## POTUS             2840       20718034              0           12
+    ## Columbia         32395         441342           7773          654
+    ## Netflix          43357       17233226          14849         2072
+    ## Spotify          37369        5214721          14572        17747
+    ## Yale             27351         618497            198          280
+    ## UofR             21851          50229           7904         4432
+    ## POTUS             2842       20718738              0           12
     ##                              url                    name             created
     ## Columbia https://t.co/s5tI6AG5PT     Columbia University 2011-02-07 18:58:59
     ## Netflix  https://t.co/ebeSKSnspf                 Netflix 2008-10-03 04:16:17
@@ -359,7 +321,7 @@ user_df
     ## Spotify             17230018       17036             FALSE
     ## Yale                 5695032        4485             FALSE
     ## UofR                14778782         569             FALSE
-    ## POTUS    1349149096909668363       17274             FALSE
+    ## POTUS    1349149096909668363       17275             FALSE
     ##                                                                      profileImageUrl
     ## Columbia http://pbs.twimg.com/profile_images/1410588756298682375/Ub9NamyI_normal.jpg
     ## Netflix  http://pbs.twimg.com/profile_images/1235992718171467776/PaX2Bz1S_normal.jpg
