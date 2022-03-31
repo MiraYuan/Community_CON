@@ -255,8 +255,8 @@ spotify30 <- search_30day("spotify", n = 300, env_name = "5293Data",
     ## tweets/search/30day/5293Data ***
 
     ## Warning: list(message = "Forbidden: Authentication succeeded but account is
-    ## not authorized to access this resource.", sent = "2022-03-31T17:40:09+00:00",
-    ## transactionId = "4232ccc285ebe909")
+    ## not authorized to access this resource.", sent = "2022-03-31T17:44:06+00:00",
+    ## transactionId = "e78eb11a13f2790f")
 
 ### Get favorited tweets
 
@@ -334,11 +334,11 @@ user_df
     ## POTUS    46th President of the United States, husband to @FLOTUS, proud dad & pop. Tweets may be archived: https://t.co/HDhBZBlifs
     ##          statusesCount followersCount favoritesCount friendsCount
     ## Columbia         32392         441337           7773          654
-    ## Netflix          43357       17232715          14849         2072
-    ## Spotify          37369        5214587          14572        17747
+    ## Netflix          43357       17232818          14849         2072
+    ## Spotify          37369        5214604          14572        17747
     ## Yale             27351         618492            198          280
     ## UofR             21851          50228           7903         4432
-    ## POTUS             2840       20717771              0           12
+    ## POTUS             2840       20717915              0           12
     ##                              url                    name             created
     ## Columbia https://t.co/s5tI6AG5PT     Columbia University 2011-02-07 18:58:59
     ## Netflix  https://t.co/ebeSKSnspf                 Netflix 2008-10-03 04:16:17
